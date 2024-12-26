@@ -3,7 +3,7 @@
 This repository implements a Best-of-N (BoN) strategy for inference-aware fine-tuning of large language models. The system supports multiple leading LLM providers and includes comprehensive testing and benchmarking capabilities.
 
 The development of this GitHub Repository was inspired by the "Inference-Aware Fine-Tuning for Best-of-N
-Sampling in Large Language Models" Paper. To read the entire paper. visithttps://arxiv.org/pdf/2412.15287
+Sampling in Large Language Models" Paper. To read the entire paper. visit https://arxiv.org/pdf/2412.15287
 
 ## Features
 
