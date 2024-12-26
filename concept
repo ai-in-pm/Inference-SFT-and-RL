@@ -1,0 +1,39 @@
+Design an AI Agent that demonstrates the principles of inference-aware fine-tuning using the Best-of-N (BoN) inference strategy. The algorithm should meet the following criteria:
+
+1. **Fine-Tuning Paradigm:**
+
+   - Implement imitation learning and reinforcement learning methods tailored to the BoN strategy.
+   - Handle the non-differentiable argmax operator in BoN through variational approximations or policy gradients.
+
+2. **Exploration-Exploitation Trade-off:**
+
+   - Design the agent to generate diverse responses during training while optimizing for high-quality outputs during inference.
+   - Use the exploration parameters (temperature T) and sample size (N) to balance between exploration and exploitation effectively.
+
+3. **LLMs Integration:**
+
+   - Utilize ChatGPT-4o, Claude Sonnet 3.5, Mistral, Groq, and Gemini models for response generation.
+   - Ensure the compatibility of these models with BoN-aware fine-tuning techniques.
+
+4. **Evaluation Metrics:**
+
+   - Implement evaluation mechanisms for BoN accuracy and pass@N metrics.
+   - Demonstrate improved performance compared to baseline models (e.g., pre-trained or standard fine-tuned models).
+
+5. **Implementation Details:**
+
+   - Include both supervised (BoN-SFT) and reinforcement learning (BoN-RL) approaches in the agent.
+   - Provide pseudocode and implementation for the BoN policy update.
+
+6. **Outcome Validation:**
+   - Show empirical improvements in metrics such as pass@32 and pass@16 for coding tasks (e.g., HumanEval) and mathematical problem-solving tasks (e.g., Hendrycks MATH).
+   - Illustrate generalization across tasks and configurations, including varying temperatures and sample sizes.
+
+Provide a Python implementation for this AI Agent, encapsulating all required functionalities. Ensure the code is modular and adaptable for future expansions. The code should include the following:
+
+- Function for training the BoN policy.
+- Mechanism for scoring and selecting the best response.
+- Implementation of the reinforcement learning approach with an environment simulator.
+- Utility for evaluating and plotting results.
+
+Document your design decisions clearly and provide inline comments for the code.
